@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDBA6712792DEEB00D324B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6702792DEEB00D324B4 /* AppDelegate.swift */; };
+		BEDBA6732792DEEB00D324B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6722792DEEB00D324B4 /* SceneDelegate.swift */; };
+		BEDBA6752792DEEB00D324B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6742792DEEB00D324B4 /* ViewController.swift */; };
+		BEDBA6782792DEEB00D324B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDBA6762792DEEB00D324B4 /* Main.storyboard */; };
+		BEDBA67B2792DEEB00D324B4 /* Delphi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6792792DEEB00D324B4 /* Delphi.xcdatamodeld */; };
+		BEDBA67D2792DEED00D324B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDBA67C2792DEED00D324B4 /* Assets.xcassets */; };
+		BEDBA6802792DEED00D324B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDBA67E2792DEED00D324B4 /* LaunchScreen.storyboard */; };
+		BEDBA68B2792DEED00D324B4 /* DelphiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA68A2792DEED00D324B4 /* DelphiTests.swift */; };
+		BEDBA6952792DEED00D324B4 /* DelphiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6942792DEED00D324B4 /* DelphiUITests.swift */; };
+		BEDBA6972792DEED00D324B4 /* DelphiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6962792DEED00D324B4 /* DelphiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEDBA6872792DEED00D324B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDBA6652792DEEB00D324B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDBA66C2792DEEB00D324B4;
+			remoteInfo = Delphi;
+		};
+		BEDBA6912792DEED00D324B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDBA6652792DEEB00D324B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDBA66C2792DEEB00D324B4;
+			remoteInfo = Delphi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEDBA66D2792DEEB00D324B4 /* Delphi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delphi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDBA6702792DEEB00D324B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEDBA6722792DEEB00D324B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BEDBA6742792DEEB00D324B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEDBA6772792DEEB00D324B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEDBA67A2792DEEB00D324B4 /* Delphi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Delphi.xcdatamodel; sourceTree = "<group>"; };
+		BEDBA67C2792DEED00D324B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEDBA67F2792DEED00D324B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEDBA6812792DEED00D324B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDBA6862792DEED00D324B4 /* DelphiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelphiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDBA68A2792DEED00D324B4 /* DelphiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelphiTests.swift; sourceTree = "<group>"; };
+		BEDBA6902792DEED00D324B4 /* DelphiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelphiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDBA6942792DEED00D324B4 /* DelphiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelphiUITests.swift; sourceTree = "<group>"; };
+		BEDBA6962792DEED00D324B4 /* DelphiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelphiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDBA66A2792DEEB00D324B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA6832792DEED00D324B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA68D2792DEED00D324B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDBA6642792DEEB00D324B4 = {
+			isa = PBXGroup;
+			children = (
+				BEDBA66F2792DEEB00D324B4 /* Delphi */,
+				BEDBA6892792DEED00D324B4 /* DelphiTests */,
+				BEDBA6932792DEED00D324B4 /* DelphiUITests */,
+				BEDBA66E2792DEEB00D324B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDBA66E2792DEEB00D324B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBA66D2792DEEB00D324B4 /* Delphi.app */,
+				BEDBA6862792DEED00D324B4 /* DelphiTests.xctest */,
+				BEDBA6902792DEED00D324B4 /* DelphiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDBA66F2792DEEB00D324B4 /* Delphi */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBA6702792DEEB00D324B4 /* AppDelegate.swift */,
+				BEDBA6722792DEEB00D324B4 /* SceneDelegate.swift */,
+				BEDBA6742792DEEB00D324B4 /* ViewController.swift */,
+				BEDBA6762792DEEB00D324B4 /* Main.storyboard */,
+				BEDBA67C2792DEED00D324B4 /* Assets.xcassets */,
+				BEDBA67E2792DEED00D324B4 /* LaunchScreen.storyboard */,
+				BEDBA6812792DEED00D324B4 /* Info.plist */,
+				BEDBA6792792DEEB00D324B4 /* Delphi.xcdatamodeld */,
+			);
+			path = Delphi;
+			sourceTree = "<group>";
+		};
+		BEDBA6892792DEED00D324B4 /* DelphiTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBA68A2792DEED00D324B4 /* DelphiTests.swift */,
+			);
+			path = DelphiTests;
+			sourceTree = "<group>";
+		};
+		BEDBA6932792DEED00D324B4 /* DelphiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDBA6942792DEED00D324B4 /* DelphiUITests.swift */,
+				BEDBA6962792DEED00D324B4 /* DelphiUITestsLaunchTests.swift */,
+			);
+			path = DelphiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDBA66C2792DEEB00D324B4 /* Delphi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDBA69A2792DEED00D324B4 /* Build configuration list for PBXNativeTarget "Delphi" */;
+			buildPhases = (
+				BEDBA6692792DEEB00D324B4 /* Sources */,
+				BEDBA66A2792DEEB00D324B4 /* Frameworks */,
+				BEDBA66B2792DEEB00D324B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Delphi;
+			productName = Delphi;
+			productReference = BEDBA66D2792DEEB00D324B4 /* Delphi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEDBA6852792DEED00D324B4 /* DelphiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDBA69D2792DEED00D324B4 /* Build configuration list for PBXNativeTarget "DelphiTests" */;
+			buildPhases = (
+				BEDBA6822792DEED00D324B4 /* Sources */,
+				BEDBA6832792DEED00D324B4 /* Frameworks */,
+				BEDBA6842792DEED00D324B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDBA6882792DEED00D324B4 /* PBXTargetDependency */,
+			);
+			name = DelphiTests;
+			productName = DelphiTests;
+			productReference = BEDBA6862792DEED00D324B4 /* DelphiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEDBA68F2792DEED00D324B4 /* DelphiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDBA6A02792DEED00D324B4 /* Build configuration list for PBXNativeTarget "DelphiUITests" */;
+			buildPhases = (
+				BEDBA68C2792DEED00D324B4 /* Sources */,
+				BEDBA68D2792DEED00D324B4 /* Frameworks */,
+				BEDBA68E2792DEED00D324B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDBA6922792DEED00D324B4 /* PBXTargetDependency */,
+			);
+			name = DelphiUITests;
+			productName = DelphiUITests;
+			productReference = BEDBA6902792DEED00D324B4 /* DelphiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDBA6652792DEEB00D324B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					BEDBA66C2792DEEB00D324B4 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					BEDBA6852792DEED00D324B4 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = BEDBA66C2792DEEB00D324B4;
+					};
+					BEDBA68F2792DEED00D324B4 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = BEDBA66C2792DEEB00D324B4;
+					};
+				};
+			};
+			buildConfigurationList = BEDBA6682792DEEB00D324B4 /* Build configuration list for PBXProject "Delphi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDBA6642792DEEB00D324B4;
+			productRefGroup = BEDBA66E2792DEEB00D324B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDBA66C2792DEEB00D324B4 /* Delphi */,
+				BEDBA6852792DEED00D324B4 /* DelphiTests */,
+				BEDBA68F2792DEED00D324B4 /* DelphiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDBA66B2792DEEB00D324B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDBA6802792DEED00D324B4 /* LaunchScreen.storyboard in Resources */,
+				BEDBA67D2792DEED00D324B4 /* Assets.xcassets in Resources */,
+				BEDBA6782792DEEB00D324B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA6842792DEED00D324B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA68E2792DEED00D324B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDBA6692792DEEB00D324B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDBA6752792DEEB00D324B4 /* ViewController.swift in Sources */,
+				BEDBA67B2792DEEB00D324B4 /* Delphi.xcdatamodeld in Sources */,
+				BEDBA6712792DEEB00D324B4 /* AppDelegate.swift in Sources */,
+				BEDBA6732792DEEB00D324B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA6822792DEED00D324B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDBA68B2792DEED00D324B4 /* DelphiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDBA68C2792DEED00D324B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDBA6972792DEED00D324B4 /* DelphiUITestsLaunchTests.swift in Sources */,
+				BEDBA6952792DEED00D324B4 /* DelphiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEDBA6882792DEED00D324B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDBA66C2792DEEB00D324B4 /* Delphi */;
+			targetProxy = BEDBA6872792DEED00D324B4 /* PBXContainerItemProxy */;
+		};
+		BEDBA6922792DEED00D324B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDBA66C2792DEEB00D324B4 /* Delphi */;
+			targetProxy = BEDBA6912792DEED00D324B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEDBA6762792DEEB00D324B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDBA6772792DEEB00D324B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEDBA67E2792DEED00D324B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDBA67F2792DEED00D324B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEDBA6982792DEED00D324B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEDBA6992792DEED00D324B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEDBA69B2792DEED00D324B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Delphi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.Delphi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEDBA69C2792DEED00D324B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Delphi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.Delphi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEDBA69E2792DEED00D324B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.DelphiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delphi.app/Delphi";
+			};
+			name = Debug;
+		};
+		BEDBA69F2792DEED00D324B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.DelphiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delphi.app/Delphi";
+			};
+			name = Release;
+		};
+		BEDBA6A12792DEED00D324B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.DelphiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Delphi;
+			};
+			name = Debug;
+		};
+		BEDBA6A22792DEED00D324B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHTKY94VRM;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CasaAzul.DelphiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Delphi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDBA6682792DEEB00D324B4 /* Build configuration list for PBXProject "Delphi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDBA6982792DEED00D324B4 /* Debug */,
+				BEDBA6992792DEED00D324B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDBA69A2792DEED00D324B4 /* Build configuration list for PBXNativeTarget "Delphi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDBA69B2792DEED00D324B4 /* Debug */,
+				BEDBA69C2792DEED00D324B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDBA69D2792DEED00D324B4 /* Build configuration list for PBXNativeTarget "DelphiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDBA69E2792DEED00D324B4 /* Debug */,
+				BEDBA69F2792DEED00D324B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDBA6A02792DEED00D324B4 /* Build configuration list for PBXNativeTarget "DelphiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDBA6A12792DEED00D324B4 /* Debug */,
+				BEDBA6A22792DEED00D324B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEDBA6792792DEEB00D324B4 /* Delphi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEDBA67A2792DEEB00D324B4 /* Delphi.xcdatamodel */,
+			);
+			currentVersion = BEDBA67A2792DEEB00D324B4 /* Delphi.xcdatamodel */;
+			path = Delphi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEDBA6652792DEEB00D324B4 /* Project object */;
+}
