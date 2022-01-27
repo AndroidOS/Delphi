@@ -8,18 +8,18 @@
 import Foundation
 
 
-protocol  BitcoinDataManagerDelegate {
-    func didUpdateBitcoin(prices: [String: Double])
+protocol  FedResDataManagerDelegate {
+    func didUpdateFedRes(prices: [String: Double])
 }
 
 struct BitcoinDataManager {
     
-    let bitcoinURL = "https://api.coindesk.com/v1/bpi/historical/close.json"
-    var delegate: BitcoinDataManagerDelegate?
+    let fedResURL = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc, exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar,Mexico-Peso), record_date:gte:2022-01-26"
+    var delegate: FedResDataManagerDelegate?
     
     func fetchBitcoinData(){
        
-        performRequest(urlString: bitcoinURL)
+        performRequest(urlString: fedResURL)
     }
     
     
@@ -36,7 +36,7 @@ struct BitcoinDataManager {
                 }
                 
                 if let safeData = data {
-                    self.parseJSON(bitcoinData: safeData)
+                    self.parseJSON(fedResData: safeData)
                 }
             }
             
@@ -46,14 +46,14 @@ struct BitcoinDataManager {
         
     }
     
-    func parseJSON(bitcoinData: Data){
+    func parseJSON(fedResData: Data){
         
         do {
-            if let json = try JSONSerialization.jsonObject(with: bitcoinData, options: []) as? [String: Any] {
+            if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
                 // try to read out a string array
                 if let values = json["bpi"] as? [String: Double] {
                     
-                    self.delegate?.didUpdateBitcoin(prices: values)
+                    self.delegate?.didUpdateFedRes(prices: values)
                 }
             }
         } catch let error as NSError {
