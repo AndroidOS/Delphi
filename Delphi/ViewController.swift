@@ -7,7 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FedResDataManagerDelegate {
+    
+    func didUpdateFedRes(prices: [String : Double]) {
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +23,5 @@ class ViewController: UIViewController {
     
     
 }
+
 
