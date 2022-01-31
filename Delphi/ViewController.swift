@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, FedResDataManagerDelegate {
     
+    var dataManager = DataManager()
+    
     func didUpdateFedRes(prices: [String : Double]) {
         
     }

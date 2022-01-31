@@ -12,7 +12,7 @@ protocol  FedResDataManagerDelegate {
     func didUpdateFedRes(prices: [String: Double])
 }
 
-struct BitcoinDataManager {
+struct DataManager {
     
     let fedResURL = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc, exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar,Mexico-Peso), record_date:gte:2022-01-26"
     var delegate: FedResDataManagerDelegate?
