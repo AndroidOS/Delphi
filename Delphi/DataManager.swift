@@ -21,17 +21,20 @@ struct DataManager {
     
     func fetchFedResData(){
        
-        performRequest(urlString: data1)
+        //performRequest(urlString: data1)
+        getData(urlString: data1)
     }
     
     
     func performRequest(urlString: String){
+        print("performRequest")
         
         if let url = URL(string: urlString){
             
             let session = URLSession(configuration: .default)
-            
-            let task = session.dataTask(with: url) { (data, response, error) in
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            //let task = session.dataTask(with: url) { (data, response, error) in
+                print("Task")
                 if error != nil {
                     print(error!)
                     return
@@ -66,5 +69,22 @@ struct DataManager {
     }
     
     
-}
 
+
+func getData(urlString: String){
+    
+    let data1: String = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate, record_date&filter=record_date:gte:2015-01-01"
+    
+    print(urlString)
+    //let url = URL(string: data1)!
+    let url: NSURL = NSURL(string: urlString)!
+
+    let task = URLSession.shared.dataTask(with: url as URL) {(data, response, error) in
+        guard let data = data else { return }
+        print(String(data: data, encoding: .utf8)!)
+    }
+
+    task.resume()
+    }
+
+}
