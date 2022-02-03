@@ -73,11 +73,13 @@ struct DataManager {
 
 func getData(urlString: String){
     
+    let c = "https://api.fiscaldata.treasury" + ".gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields" + "=country_currency_desc,exchange_rate," + "record_date&filter=record_date:gte:2015-01-01"
+    
     let data1: String = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate, record_date&filter=record_date:gte:2015-01-01"
     
     print(urlString)
-    //let url = URL(string: data1)!
-    let url: NSURL = NSURL(string: urlString)!
+    let url = URL(string: c)!
+    //let url: NSURL = NSURL(string: data1)!
 
     let task = URLSession.shared.dataTask(with: url as URL) {(data, response, error) in
         guard let data = data else { return }
