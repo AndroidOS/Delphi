@@ -14,15 +14,17 @@ protocol  FedResDataManagerDelegate {
 
 struct DataManager {
     
-    let data1 = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate, record_date&filter=record_date:gte:2015-01-01"
+    let treasuryURL = "https://api.fiscaldata.treasury" + ".gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields" + "=country_currency_desc,exchange_rate," + "record_date&filter=record_date:gte:2015-01-01"
+    
     
     let fedResURL = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc, exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar,Mexico-Peso), record_date:gte:2022-01-26"
+    
     var delegate: FedResDataManagerDelegate?
     
     func fetchFedResData(){
        
-        //performRequest(urlString: data1)
-        getData(urlString: data1)
+        performRequest(urlString: treasuryURL)
+        //getData(urlString: data1)
     }
     
     
@@ -31,7 +33,7 @@ struct DataManager {
         
         if let url = URL(string: urlString){
             
-            let session = URLSession(configuration: .default)
+            
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             //let task = session.dataTask(with: url) { (data, response, error) in
                 print("Task")
@@ -40,7 +42,7 @@ struct DataManager {
                     return
                 }
                 
-                print(data)
+                print(String(data: data!, encoding: .utf8)!)
                 if let safeData = data {
                     self.parseJSON(fedResData: safeData)
                 }
@@ -69,24 +71,7 @@ struct DataManager {
     }
     
     
-
-
-func getData(urlString: String){
-    
-    let c = "https://api.fiscaldata.treasury" + ".gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields" + "=country_currency_desc,exchange_rate," + "record_date&filter=record_date:gte:2015-01-01"
-    
-    let data1: String = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc,exchange_rate, record_date&filter=record_date:gte:2015-01-01"
-    
-    print(urlString)
-    let url = URL(string: c)!
-    //let url: NSURL = NSURL(string: data1)!
-
-    let task = URLSession.shared.dataTask(with: url as URL) {(data, response, error) in
-        guard let data = data else { return }
-        print(String(data: data, encoding: .utf8)!)
-    }
-
-    task.resume()
-    }
-
 }
+
+
+//let task = URLSession.shared.dataTask(with: url as URL) {(data, response, error) in
