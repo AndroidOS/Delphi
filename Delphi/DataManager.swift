@@ -36,7 +36,7 @@ struct DataManager {
             
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             //let task = session.dataTask(with: url) { (data, response, error) in
-                print("Task")
+                //print("Task")
                 if error != nil {
                     print(error!)
                     return
@@ -45,6 +45,7 @@ struct DataManager {
                 print(String(data: data!, encoding: .utf8)!)
                 if let safeData = data {
                     self.parseJSON(fedResData: safeData)
+                    parseJSON(fedResData: safeData)
                 }
             }
             
@@ -59,7 +60,7 @@ struct DataManager {
         do {
             if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
                 // try to read out a string array
-                if let values = json["bpi"] as? [String: Double] {
+                if let values = json["data"] as? [String: Double] {
                     
                     self.delegate?.didUpdateFedRes(prices: values)
                 }

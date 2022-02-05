@@ -13,6 +13,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate {
     
     func didUpdateFedRes(prices: [String : Double]) {
         print("didUpdateFedRes")
+        print(prices)
     }
     
 
