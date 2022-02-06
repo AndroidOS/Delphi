@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol  FedResDataManagerDelegate {
-    func didUpdateFedRes(prices: [String: Double])
+    func didUpdateFedRes(prices: [String: Any])
 }
 
 struct DataManager {
@@ -42,10 +42,11 @@ struct DataManager {
                     return
                 }
                 
-                print(String(data: data!, encoding: .utf8)!)
+                print("raw data")
+                //print(String(data: data!, encoding: .utf8)!)
                 if let safeData = data {
                     self.parseJSON(fedResData: safeData)
-                    parseJSON(fedResData: safeData)
+                    //parseJSON(fedResData: safeData)
                 }
             }
             
@@ -56,12 +57,12 @@ struct DataManager {
     }
     
     func parseJSON(fedResData: Data){
-        print(fedResData)
+        print("parseJSON")
         do {
             if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
                 // try to read out a string array
-                if let values = json["data"] as? [String: Double] {
-                    
+                if let values = json["data"] as? [String: Any] {
+                    print("values")
                     self.delegate?.didUpdateFedRes(prices: values)
                 }
             }

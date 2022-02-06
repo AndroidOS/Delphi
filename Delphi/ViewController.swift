@@ -11,7 +11,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate {
     
     var dataManager = DataManager()
     
-    func didUpdateFedRes(prices: [String : Double]) {
+    func didUpdateFedRes(prices: [String : Any]) {
         print("didUpdateFedRes")
         print(prices)
     }
