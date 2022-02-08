@@ -43,7 +43,7 @@ struct DataManager {
                 }
                 
                 print("raw data")
-                //print(String(data: data!, encoding: .utf8)!)
+                print(String(data: data!, encoding: .utf8)!)
                 if let safeData = data {
                     print("SafeData")
                     self.parseJSON(fedResData: safeData)
@@ -64,7 +64,7 @@ struct DataManager {
                 // try to read out a string array
                 print(json)
                 if let values = json["country_currency_desc"] as? [String: Any] {
-                    print("values")
+                    //print("values")
                     self.delegate?.didUpdateFedRes(prices: values)
                 }
             }
