@@ -43,9 +43,9 @@ struct DataManager {
                 }
                 
                 print("raw data")
-                print(String(data: data!, encoding: .utf8)!)
+                //print(String(data: data!, encoding: .utf8)!)
                 if let safeData = data {
-                    print("SafeData")
+                    //print("SafeData")
                     self.parseJSON(fedResData: safeData)
                     //parseJSON(fedResData: safeData)
                 }
@@ -62,10 +62,11 @@ struct DataManager {
         do {
             if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
                 // try to read out a string array
-                print(json)
-                if let values = json["country_currency_desc"] as? [String: Any] {
-                    //print("values")
-                    self.delegate?.didUpdateFedRes(prices: values)
+                //print(json)
+                if let values = json["data"] as? [Any] {
+                    print("values")
+                    print(values)
+                    //self.delegate?.didUpdateFedRes(prices: values)
                 }
             }
         } catch let error as NSError {
