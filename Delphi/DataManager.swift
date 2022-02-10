@@ -58,6 +58,7 @@ struct DataManager {
     }
     
     func parseJSON(fedResData: Data){
+        var prices: [Double] = []
         print("parseJSON")
         do {
             if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
@@ -65,7 +66,16 @@ struct DataManager {
                 //print(json)
                 if let values = json["data"] as? [Any] {
                     print("values")
-                    print(values)
+                    
+                    for price in prices {
+                        do {
+                            print(price)
+                        } catch let error as NSError {
+                            print("Loop error")
+                        }
+                    }
+                    
+                    //print(values[1])
                     //self.delegate?.didUpdateFedRes(prices: values)
                 }
             }
