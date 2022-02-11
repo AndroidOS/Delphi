@@ -65,11 +65,13 @@ struct DataManager {
                 // try to read out a string array
                 //print(json)
                 if let values = json["data"] as? [Any] {
-                    print("values")
+                    //print("values")
                     
-                    for price in prices {
+                    print(values.count)
+                    
+                    for price in values {
                         do {
-                            print(price)
+                            //print(price)
                         } catch let error as NSError {
                             print("Loop error")
                         }
