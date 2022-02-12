@@ -67,14 +67,22 @@ struct DataManager {
                 if let values = json["data"] as? [Any] {
                     //print("values")
                     
-                    print(values.count)
+                    //print(values.count)
                     
                     for price in values {
-                        do {
-                            //print(price)
-                        } catch let error as NSError {
-                            print("Loop error")
-                        }
+                        //print(price)
+//                        do {
+//
+//                        } catch let error as NSError {
+//                            print("Loop error")
+//                        }
+                        
+                        let priceString = "\(price)"
+                        
+                        // let fullNameArr = fullName.componentsSeparatedByString(" ")
+                        let splitPrice = priceString.split(separator: ";")
+                        
+                        print(splitPrice[1])
                     }
                     
                     //print(values[1])
