@@ -82,7 +82,9 @@ struct DataManager {
                         // let fullNameArr = fullName.componentsSeparatedByString(" ")
                         let splitPrice = priceString.split(separator: ";")
                         
-                        print(splitPrice[1])
+                        let today = splitPrice[1].split(separator: "=")
+                        
+                        print(today[1])
                     }
                     
                     //print(values[1])
