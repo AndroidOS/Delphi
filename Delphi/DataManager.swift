@@ -70,21 +70,19 @@ struct DataManager {
                     //print(values.count)
                     
                     for price in values {
-                        //print(price)
-//                        do {
-//
-//                        } catch let error as NSError {
-//                            print("Loop error")
-//                        }
                         
                         let priceString = "\(price)"
                         
-                        // let fullNameArr = fullName.componentsSeparatedByString(" ")
-                        let splitPrice = priceString.split(separator: ";")
-                        
-                        let today = splitPrice[1].split(separator: "=")
-                        
-                        print(today[1])
+                        stringSplit(price: priceString)
+                       
+//                        let priceString = "\(price)"
+//
+//                        // let fullNameArr = fullName.componentsSeparatedByString(" ")
+//                        let splitPrice = priceString.split(separator: ";")
+//
+//                        let today = splitPrice[1].split(separator: "=")
+//
+//                        print(today[1])
                     }
                     
                     //print(values[1])
@@ -95,6 +93,18 @@ struct DataManager {
             print("Failed to load: \(error.localizedDescription)")
         }
 
+    }
+    
+    func   stringSplit(price: String){
+        
+        let priceString = "\(price)"
+        
+        // let fullNameArr = fullName.componentsSeparatedByString(" ")
+        let splitPrice = priceString.split(separator: ";")
+        
+        let today = splitPrice[1].split(separator: "=")
+        
+        print(today[1])
     }
     
     
