@@ -98,13 +98,15 @@ struct DataManager {
     func   stringSplit(price: String){
         
         let priceString = "\(price)"
-        
+        //print(priceString)
         // let fullNameArr = fullName.componentsSeparatedByString(" ")
         let splitPrice = priceString.split(separator: ";")
         
-        let today = splitPrice[1].split(separator: "=")
+        let todayPrice = splitPrice[1].split(separator: "=")
+        let country = splitPrice[0].split(separator: "=")
         
-        print(today[1])
+        print(todayPrice[1])
+        print(country[1])
     }
     
     
