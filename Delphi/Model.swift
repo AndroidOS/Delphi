@@ -59,3 +59,13 @@ import Foundation
 //    public Meta meta;
 //    public Links links;
 //}
+
+class Forex {
+    let currency:String
+    let value:String
+    
+    init(name: String, value: String) {
+              self.currency = name
+              self.value = value
+         }
+}

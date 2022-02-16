@@ -97,6 +97,8 @@ struct DataManager {
     
     func   stringSplit(price: String){
         
+        let 
+        
         let priceString = "\(price)"
         //print(priceString)
         // let fullNameArr = fullName.componentsSeparatedByString(" ")
