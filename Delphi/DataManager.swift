@@ -97,7 +97,7 @@ struct DataManager {
     
     func   stringSplit(price: String){
         
-        let 
+        //let
         
         let priceString = "\(price)"
         //print(priceString)
@@ -107,8 +107,14 @@ struct DataManager {
         let todayPrice = splitPrice[1].split(separator: "=")
         let country = splitPrice[0].split(separator: "=")
         
-        print(todayPrice[1])
-        print(country[1])
+        let countryString = "\(country[1])"
+        let todayPriceString = "\(todayPrice[1])"
+        //print(todayPrice[1])
+        //print(country[1])
+        
+        let currencyObject = Forex(name: countryString, value: todayPriceString)
+        
+        print(currencyObject.value)
     }
     
     
