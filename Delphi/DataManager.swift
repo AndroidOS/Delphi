@@ -97,7 +97,7 @@ struct DataManager {
     
     func   stringSplit(price: String){
         
-        //let
+        var forexArray = [Forex]()
         
         let priceString = "\(price)"
         //print(priceString)

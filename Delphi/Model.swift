@@ -68,4 +68,6 @@ class Forex {
               self.currency = name
               self.value = value
          }
+    
+    
 }
