@@ -58,6 +58,8 @@ struct DataManager {
     }
     
     func parseJSON(fedResData: Data){
+        
+        var forexArray = [Forex]()
         var prices: [Double] = []
         print("parseJSON")
         do {
@@ -73,7 +75,7 @@ struct DataManager {
                         
                         let priceString = "\(price)"
                         
-                        stringSplit(price: priceString)
+                        forexArray.append( stringSplit(price: priceString))
                        
 //                        let priceString = "\(price)"
 //
@@ -95,9 +97,9 @@ struct DataManager {
 
     }
     
-    func   stringSplit(price: String){
+    func   stringSplit(price: String)-> Forex{
         
-        var forexArray = [Forex]()
+        
         
         let priceString = "\(price)"
         //print(priceString)
@@ -114,7 +116,10 @@ struct DataManager {
         
         let currencyObject = Forex(name: countryString, value: todayPriceString)
         
+        
         print(currencyObject.value)
+        
+        return currencyObject
     }
     
     
