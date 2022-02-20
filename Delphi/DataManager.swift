@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol  FedResDataManagerDelegate {
-    func didUpdateFedRes(prices: [String: Any])
+    func didUpdateFedRes(prices: [Forex])
 }
 
 struct DataManager {
@@ -60,7 +60,7 @@ struct DataManager {
     func parseJSON(fedResData: Data){
         
         var forexArray = [Forex]()
-        var prices: [Double] = []
+        //var prices: [Double] = []
         print("parseJSON")
         do {
             if let json = try JSONSerialization.jsonObject(with: fedResData, options: []) as? [String: Any] {
@@ -88,7 +88,7 @@ struct DataManager {
                     }
                     
                     //print(values[1])
-                    //self.delegate?.didUpdateFedRes(prices: values)
+                    self.delegate?.didUpdateFedRes(prices: forexArray)
                 }
             }
         } catch let error as NSError {
@@ -117,7 +117,7 @@ struct DataManager {
         let currencyObject = Forex(name: countryString, value: todayPriceString)
         
         
-        print(currencyObject.value)
+       // print(currencyObject.value)
         
         return currencyObject
     }

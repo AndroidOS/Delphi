@@ -9,12 +9,14 @@ import UIKit
 
 class ViewController: UIViewController, FedResDataManagerDelegate {
     
-    var dataManager = DataManager()
     
-    func didUpdateFedRes(prices: [String : Any]) {
-        print("didUpdateFedRes")
+    func didUpdateFedRes(prices: [Forex]) {
         print(prices)
     }
+    
+    
+    var dataManager = DataManager()
+    
     
 
     override func viewDidLoad() {
