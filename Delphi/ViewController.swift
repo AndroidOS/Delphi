@@ -7,7 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController, FedResDataManagerDelegate {
+class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
+    
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
     
     func didUpdateFedRes(prices: [Forex]) {
