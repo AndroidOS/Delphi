@@ -16,11 +16,20 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     @IBOutlet weak var tableview: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return animals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        // create a new cell if needed or reuse an old one
+//        let cell:UITableViewCell1 = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+               // set the text from the data model
+        cell.textLabel?.text = self.animals[indexPath.row]
+               
+        return cell
+        
     }
     
     
@@ -40,6 +49,10 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         
         dataManager.delegate = self
         dataManager.fetchFedResData()
+        
+        // This view controller itself will provide the delegate methods and row data for the table view.
+//               tableView.delegate = self
+//               tableView.dataSource = self
         
         print("ViewDidLoad")
     }
