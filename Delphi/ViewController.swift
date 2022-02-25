@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
     
+    var modelArray  = [Forex]()
+    
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
     
