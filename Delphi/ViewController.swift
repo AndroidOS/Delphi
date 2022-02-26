@@ -38,6 +38,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     func didUpdateFedRes(prices: [Forex]) {
         print(prices)
+        modelArray = prices
     }
     
     
