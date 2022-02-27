@@ -18,7 +18,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     @IBOutlet weak var tableview: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        //return animals.count
+        return modelArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -28,7 +29,9 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
                // set the text from the data model
-        cell.textLabel?.text = self.animals[indexPath.row]
+        //cell.textLabel?.text = self.animals[indexPath.row]
+        
+        cell.textLabel?.text = self.modelArray[indexPath.row].currency
                
         return cell
         
@@ -39,6 +42,11 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     func didUpdateFedRes(prices: [Forex]) {
         print(prices)
         modelArray = prices
+        DispatchQueue.main.async {
+            self.modelArray = prices
+            //self.tableView.reloadData()
+            self.tableview.reloadData()
+        }
     }
     
     
