@@ -14,11 +14,11 @@ protocol  FedResDataManagerDelegate {
 
 struct DataManager {
     
-    let treasuryURL = "https://api.fiscaldata.treasury" + ".gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields" + "=country_currency_desc,exchange_rate," + "record_date&filter=record_date:gte:2015-01-01"
+    let treasuryURL = "https://api.fiscaldata.treasury" + ".gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields" + "=country_currency_desc,exchange_rate," + "record_date&filter=record_date:gte:2021-02-01"
     
     
-    let fedResURL = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc, exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar,Mexico-Peso), record_date:gte:2022-01-26"
-    
+//    let fedResURL = "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange?fields=country_currency_desc, exchange_rate,record_date&filter=country_currency_desc:in:(Canada-Dollar,Mexico-Peso), record_date:gte:2022-01-26"
+//
     var delegate: FedResDataManagerDelegate?
     
     func fetchFedResData(){

@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
     
     var modelArray  = [Forex]()
+    var currencyArray = [String]()
     
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
@@ -42,6 +43,9 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     func didUpdateFedRes(prices: [Forex]) {
         print(prices)
         modelArray = prices
+        
+        findUniqueCurrency()
+        
         DispatchQueue.main.async {
             self.modelArray = prices
             //self.tableView.reloadData()
@@ -61,13 +65,14 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         dataManager.delegate = self
         dataManager.fetchFedResData()
         
-        // This view controller itself will provide the delegate methods and row data for the table view.
-//               tableView.delegate = self
-//               tableView.dataSource = self
         
         print("ViewDidLoad")
     }
-
+    
+    
+    func    findUniqueCurrency(){
+        
+    }
 
     
     
