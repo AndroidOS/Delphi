@@ -72,6 +72,15 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     func    findUniqueCurrency(){
         
+        for forex in modelArray {
+            
+        
+            if !currencyArray.contains(forex.currency){
+                currencyArray.append(forex.currency)
+            }
+        }
+        
+        print(currencyArray)
     }
 
     
