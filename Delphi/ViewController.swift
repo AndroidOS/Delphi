@@ -20,7 +20,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return animals.count
-        return modelArray.count
+        //return modelArray.count
+        return currencyArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,7 +33,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
                // set the text from the data model
         //cell.textLabel?.text = self.animals[indexPath.row]
         
-        cell.textLabel?.text = self.modelArray[indexPath.row].currency
+//        cell.textLabel?.text = self.modelArray[indexPath.row].currency
+        cell.textLabel?.text = self.currencyArray[indexPath.row]
                
         return cell
         
