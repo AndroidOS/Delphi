@@ -55,11 +55,28 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="mPj-IN-Rje" id="FZB-sM-g4A"/>
+                        <segue destination="R39-2J-25S" kind="show" id="iiM-X8-sS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="49.553571428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vEy-Mk-Ah4">
+            <objects>
+                <viewController id="R39-2J-25S" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ku-cF-hf0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UgY-he-onE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ueH-b6-M8t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8T-F2-NyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="209"/>
         </scene>
     </scenes>
     <resources>

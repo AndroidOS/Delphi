@@ -77,6 +77,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         for forex in modelArray {
             
             let cleanCurrency = forex.currency.replacingOccurrences(of: "\"", with: "")
+            
             if !currencyArray.contains(cleanCurrency){
                 currencyArray.append(cleanCurrency)
             }
