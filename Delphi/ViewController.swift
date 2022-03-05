@@ -85,6 +85,13 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         
         print(currencyArray)
     }
+    
+   
+    
+    // method to run when table view cell is tapped
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            print("You tapped cell number \(indexPath.row).")
+        }
 
     
     
