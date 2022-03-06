@@ -55,7 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="mPj-IN-Rje" id="FZB-sM-g4A"/>
-                        <segue destination="R39-2J-25S" kind="show" id="iiM-X8-sS4"/>
+                        <segue destination="R39-2J-25S" kind="show" identifier="detail" id="iiM-X8-sS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
