@@ -93,6 +93,10 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
             print("You tapped cell number \(indexPath.row).")
             self.performSegue(withIdentifier: "detail", sender: nil)
         }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
 
     
     
