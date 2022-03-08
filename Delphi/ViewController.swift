@@ -95,7 +95,12 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "MySegueId" {
+                if let detailViewController = segue.destination as? DetailViewController {
+//                        nextViewController.valueOfxyz = "XYZ" //Or pass any values
+//                        nextViewController.valueOf123 = 123
+                }
+            }
     }
 
     
