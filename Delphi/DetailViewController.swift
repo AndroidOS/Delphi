@@ -8,10 +8,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    public var modelString:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let url = modelString {
+            print(modelString ?? "NIL")
+        } else {
+            print("Nil Value")
+        }
         // Do any additional setup after loading the view.
     }
     
