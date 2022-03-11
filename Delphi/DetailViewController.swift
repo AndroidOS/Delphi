@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    public var modelString:String!
+    public var modelString:String?
 
     @IBOutlet weak var lblDisplay: UILabel!
     
@@ -17,8 +17,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         if let url = modelString {
             print(modelString ?? "NIL")
+            lblDisplay.text = "\(url)"
         } else {
             print("Nil Value")
+            lblDisplay.text = "Nil Value"
         }
         // Do any additional setup after loading the view.
     }
