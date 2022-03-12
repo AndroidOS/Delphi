@@ -9,12 +9,23 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    public var modelString:String?
+    var modelString:String?
 
     @IBOutlet weak var lblDisplay: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if let url = modelString {
+//            print(modelString ?? "NIL")
+//            lblDisplay.text = "\(url)"
+//        } else {
+//            print("Nil Value")
+//            lblDisplay.text = "Nil Value"
+//        }
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         if let url = modelString {
             print(modelString ?? "NIL")
             lblDisplay.text = "\(url)"
@@ -22,7 +33,6 @@ class DetailViewController: UIViewController {
             print("Nil Value")
             lblDisplay.text = "Nil Value"
         }
-        // Do any additional setup after loading the view.
     }
     
 
