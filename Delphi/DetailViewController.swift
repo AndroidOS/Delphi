@@ -10,6 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var modelString:String?
+    var numUser = 0
 
     @IBOutlet weak var lblDisplay: UILabel!
     
@@ -26,6 +27,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print(numUser)
         if let url = modelString {
             print(modelString ?? "NIL")
             lblDisplay.text = "\(url)"
