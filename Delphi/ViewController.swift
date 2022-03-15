@@ -9,8 +9,9 @@ import UIKit
 
 class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
     
-    var modelArray  = [Forex]()
-    var currencyArray = [String]()
+    private var modelArray  = [Forex]()
+    private var currencyArray = [String]()
+    private var touchIndex = 0
     
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
@@ -98,7 +99,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         if segue.identifier == "detail" {
                 if let detailViewController = segue.destination as? DetailViewController {
                     detailViewController.modelString = "1234"
-                    detailViewController.numUser = 5
+                    detailViewController.numUser = touchIndex
                     print("Prepare for segue")
 //                        nextViewController.valueOfxyz = "XYZ" //Or pass any values
 //                        nextViewController.valueOf123 = 123
