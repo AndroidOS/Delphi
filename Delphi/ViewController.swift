@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
     
-    private var modelArray  = [Forex]()
-    private var currencyArray = [String]()
-    private var touchIndex = 0
+    var modelArray  = [Forex]()
+    var currencyArray = [String]()
+    var touchIndex = 0
+    var currencyString = ""
     
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
@@ -92,13 +93,14 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     // method to run when table view cell is tapped
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             print("You tapped cell number \(indexPath.row).")
+            currencyString = currencyArray[indexPath.row]
             self.performSegue(withIdentifier: "detail", sender: nil)
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detail" {
                 if let detailViewController = segue.destination as? DetailViewController {
-                    detailViewController.modelString = "1234"
+                    detailViewController.modelString = currencyString
                     detailViewController.numUser = touchIndex
                     print("Prepare for segue")
 //                        nextViewController.valueOfxyz = "XYZ" //Or pass any values
