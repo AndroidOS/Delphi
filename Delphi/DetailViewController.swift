@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var lblDisplay: UILabel!
     
+    @IBOutlet weak var lblCurrency: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        if let url = modelString {

@@ -77,18 +77,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-5q-JfP">
+                                <rect key="frame" x="39" y="580" width="314" height="111"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UgY-he-onE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EH3-1U-dwR" firstAttribute="top" secondItem="UgY-he-onE" secondAttribute="top" constant="20" id="3zU-zX-ZMZ"/>
                             <constraint firstItem="UgY-he-onE" firstAttribute="trailing" secondItem="EH3-1U-dwR" secondAttribute="trailing" constant="42" id="A6w-jW-Bsa"/>
+                            <constraint firstItem="UgY-he-onE" firstAttribute="bottom" secondItem="BuQ-5q-JfP" secondAttribute="bottom" constant="171" id="Evl-mn-0iC"/>
+                            <constraint firstItem="BuQ-5q-JfP" firstAttribute="top" secondItem="EH3-1U-dwR" secondAttribute="bottom" constant="142" id="TlI-6F-vYT"/>
+                            <constraint firstItem="BuQ-5q-JfP" firstAttribute="leading" secondItem="UgY-he-onE" secondAttribute="leading" constant="39" id="aEd-WC-dWG"/>
+                            <constraint firstItem="UgY-he-onE" firstAttribute="trailing" secondItem="BuQ-5q-JfP" secondAttribute="trailing" constant="61" id="hxA-au-Lau"/>
                             <constraint firstItem="UgY-he-onE" firstAttribute="bottom" secondItem="EH3-1U-dwR" secondAttribute="bottom" constant="424" id="j0j-hr-LmV"/>
                             <constraint firstItem="EH3-1U-dwR" firstAttribute="leading" secondItem="UgY-he-onE" secondAttribute="leading" constant="39" id="rlY-rk-yOG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ueH-b6-M8t"/>
                     <connections>
+                        <outlet property="lblCurrency" destination="BuQ-5q-JfP" id="aQZ-4i-pFS"/>
                         <outlet property="lblDisplay" destination="EH3-1U-dwR" id="fYP-5t-BS0"/>
                     </connections>
                 </viewController>
