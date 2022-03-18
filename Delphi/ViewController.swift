@@ -13,6 +13,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     var currencyArray = [String]()
     var touchIndex = 0
     var currencyString = ""
+    var currencyAmount = 0.0
     
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
