@@ -11,6 +11,7 @@ class DetailViewController: UIViewController {
     
     var modelString:String?
     var numUser = 0
+    var numCost = ""
 
     @IBOutlet weak var lblDisplay: UILabel!
     
