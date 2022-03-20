@@ -38,6 +38,8 @@ class DetailViewController: UIViewController {
             print("Nil Value")
             lblDisplay.text = "Nil Value"
         }
+        
+        lblCurrency.text = numCost
     }
     
 
