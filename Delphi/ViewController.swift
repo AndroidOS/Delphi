@@ -13,7 +13,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     var currencyArray = [String]()
     var touchIndex = 0
     var currencyString = ""
-    var currencyAmount = 0.0
+    var currencyAmount = ""
     
     // Data model: These strings will be the data for the table view cells
         let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
@@ -95,6 +95,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             print("You tapped cell number \(indexPath.row).")
             currencyString = currencyArray[indexPath.row]
+            currencyAmount = modelArray[indexPath.row].value
             self.performSegue(withIdentifier: "detail", sender: nil)
         }
     
@@ -103,6 +104,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
                 if let detailViewController = segue.destination as? DetailViewController {
                     detailViewController.modelString = currencyString
                     detailViewController.numUser = touchIndex
+                    detailViewController.numCost = currencyAmount
                     print("Prepare for segue")
 //                        nextViewController.valueOfxyz = "XYZ" //Or pass any values
 //                        nextViewController.valueOf123 = 123
