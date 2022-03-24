@@ -53,8 +53,11 @@
                             <constraint firstAttribute="bottom" secondItem="mPj-IN-Rje" secondAttribute="bottom" id="yis-cG-jp8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8"/>
+                    <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8">
+                        <barButtonItem key="rightBarButtonItem" title="Downnload" id="2yb-EY-sLT"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="Download" destination="2yb-EY-sLT" id="kbd-mE-0Kn"/>
                         <outlet property="tableview" destination="mPj-IN-Rje" id="FZB-sM-g4A"/>
                         <segue destination="R39-2J-25S" kind="show" identifier="detail" id="iiM-X8-sS4"/>
                     </connections>
