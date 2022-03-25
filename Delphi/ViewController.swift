@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewDelegate, UITableViewDataSource  {
     
     @IBOutlet weak var Download: UIBarButtonItem!
+    
     var modelArray  = [Forex]()
     var currencyArray = [String]()
     var touchIndex = 0
@@ -114,6 +115,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     }
 
     
+    @IBAction func btnDownload(_ sender: Any) {
+    }
     
 }
 

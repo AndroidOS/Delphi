@@ -54,7 +54,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8">
-                        <barButtonItem key="rightBarButtonItem" title="Downnload" id="2yb-EY-sLT"/>
+                        <barButtonItem key="rightBarButtonItem" title="Downnload" id="2yb-EY-sLT">
+                            <connections>
+                                <action selector="btnDownload:" destination="BYZ-38-t0r" id="Eht-hz-ygW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Download" destination="2yb-EY-sLT" id="kbd-mE-0Kn"/>
