@@ -70,7 +70,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         // Do any additional setup after loading the view.
         
         dataManager.delegate = self
-        dataManager.fetchFedResData()
+//        dataManager.fetchFedResData()
         
         
         print("ViewDidLoad")
@@ -116,6 +116,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
 
     
     @IBAction func btnDownload(_ sender: Any) {
+        
+        dataManager.fetchFedResData()
     }
     
 }
