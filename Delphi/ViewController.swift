@@ -11,6 +11,9 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     @IBOutlet weak var Download: UIBarButtonItem!
     
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var modelArray  = [Forex]()
     var currencyArray = [String]()
     var touchIndex = 0
@@ -68,7 +71,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        activityIndicator.hidesWhenStopped = true
         dataManager.delegate = self
 //        dataManager.fetchFedResData()
         
