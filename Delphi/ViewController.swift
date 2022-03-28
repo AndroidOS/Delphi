@@ -60,6 +60,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
             self.modelArray = prices
             //self.tableView.reloadData()
             self.tableview.reloadData()
+            self.activityIndicator.hidesWhenStopped = true
         }
     }
     
@@ -119,7 +120,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
 
     
     @IBAction func btnDownload(_ sender: Any) {
-        
+        activityIndicator.startAnimating()
         dataManager.fetchFedResData()
     }
     
