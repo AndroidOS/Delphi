@@ -58,7 +58,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8">
-                        <barButtonItem key="rightBarButtonItem" title="Downnload" id="2yb-EY-sLT">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="yXK-z2-MVh"/>
+                        <barButtonItem key="rightBarButtonItem" image="terminal.fill" catalog="system" id="2yb-EY-sLT">
                             <connections>
                                 <action selector="btnDownload:" destination="BYZ-38-t0r" id="Eht-hz-ygW"/>
                             </connections>
@@ -141,6 +142,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="terminal.fill" catalog="system" width="128" height="93"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
