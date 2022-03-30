@@ -124,6 +124,10 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
         dataManager.fetchFedResData()
     }
     
+    
+    @IBAction func btnEmail(_ sender: Any) {
+    }
+    
 }
 
 

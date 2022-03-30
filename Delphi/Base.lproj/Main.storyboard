@@ -58,7 +58,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="yXK-z2-MVh"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="yXK-z2-MVh">
+                            <connections>
+                                <action selector="btnEmail:" destination="BYZ-38-t0r" id="ldS-44-KcC"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="terminal.fill" catalog="system" id="2yb-EY-sLT">
                             <connections>
                                 <action selector="btnDownload:" destination="BYZ-38-t0r" id="Eht-hz-ygW"/>
