@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEC4118F27F70BC900696851 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC4118E27F70BC900696851 /* Share.swift */; };
 		BEC78DEF27D5FFDE000D052D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC78DEE27D5FFDE000D052D /* DetailViewController.swift */; };
 		BEDBA6712792DEEB00D324B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6702792DEEB00D324B4 /* AppDelegate.swift */; };
 		BEDBA6732792DEEB00D324B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDBA6722792DEEB00D324B4 /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEC4118E27F70BC900696851 /* Share.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Share.swift; sourceTree = "<group>"; };
 		BEC78DEE27D5FFDE000D052D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BEDBA66D2792DEEB00D324B4 /* Delphi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Delphi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDBA6702792DEEB00D324B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				BEDBA6792792DEEB00D324B4 /* Delphi.xcdatamodeld */,
 				BEE4213E2795640B00C8CF8D /* DataManager.swift */,
 				BEF2427527B2639300FD7CFB /* Model.swift */,
+				BEC4118E27F70BC900696851 /* Share.swift */,
 			);
 			path = Delphi;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDBA6752792DEEB00D324B4 /* ViewController.swift in Sources */,
+				BEC4118F27F70BC900696851 /* Share.swift in Sources */,
 				BEE4213F2795640B00C8CF8D /* DataManager.swift in Sources */,
 				BEDBA67B2792DEEB00D324B4 /* Delphi.xcdatamodeld in Sources */,
 				BEF2427627B2639300FD7CFB /* Model.swift in Sources */,
