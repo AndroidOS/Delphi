@@ -11,6 +11,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     @IBOutlet weak var Download: UIBarButtonItem!
     
+    @IBOutlet weak var btnShareOut: UITableView!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -71,6 +72,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        btnShareOut.isHidden = true
         // Do any additional setup after loading the view.
         activityIndicator.hidesWhenStopped = true
         dataManager.delegate = self
@@ -126,6 +129,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     
     @IBAction func btnEmail(_ sender: Any) {
+        
+        
         
         // text to share
                let text = "This is some text that I want to share."
