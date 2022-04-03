@@ -11,7 +11,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     
     @IBOutlet weak var Download: UIBarButtonItem!
     
-    @IBOutlet weak var btnShareOut: UITableView!
+   
+    @IBOutlet weak var btnShare: UIBarButtonItem!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -62,6 +63,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
             //self.tableView.reloadData()
             self.tableview.reloadData()
             self.activityIndicator.hidesWhenStopped = true
+            self.btnShare.isEnabled = true
         }
     }
     
@@ -73,7 +75,7 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        btnShareOut.isHidden = true
+        
         // Do any additional setup after loading the view.
         activityIndicator.hidesWhenStopped = true
         dataManager.delegate = self

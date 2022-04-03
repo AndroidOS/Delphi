@@ -58,7 +58,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="mO4-tj-eU8">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="yXK-z2-MVh">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" image="square.and.arrow.up" catalog="system" id="yXK-z2-MVh">
                             <connections>
                                 <action selector="btnEmail:" destination="BYZ-38-t0r" id="ldS-44-KcC"/>
                             </connections>
@@ -72,7 +72,7 @@
                     <connections>
                         <outlet property="Download" destination="2yb-EY-sLT" id="kbd-mE-0Kn"/>
                         <outlet property="activityIndicator" destination="Jcs-7i-Qxw" id="OZc-46-MAz"/>
-                        <outlet property="btnShareOut" destination="mPj-IN-Rje" id="QIM-eF-adq"/>
+                        <outlet property="btnShare" destination="yXK-z2-MVh" id="BW6-ra-dr0"/>
                         <outlet property="tableview" destination="mPj-IN-Rje" id="FZB-sM-g4A"/>
                         <segue destination="R39-2J-25S" kind="show" identifier="detail" id="iiM-X8-sS4"/>
                     </connections>
