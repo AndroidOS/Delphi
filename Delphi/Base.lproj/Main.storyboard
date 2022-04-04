@@ -117,8 +117,11 @@
                             <constraint firstItem="EH3-1U-dwR" firstAttribute="leading" secondItem="UgY-he-onE" secondAttribute="leading" constant="39" id="rlY-rk-yOG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="ueH-b6-M8t"/>
+                    <navigationItem key="navigationItem" title="Details" id="ueH-b6-M8t">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="q4C-Tt-t5z"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btn_share" destination="q4C-Tt-t5z" id="64Q-1H-163"/>
                         <outlet property="lblCurrency" destination="BuQ-5q-JfP" id="aQZ-4i-pFS"/>
                         <outlet property="lblDisplay" destination="EH3-1U-dwR" id="fYP-5t-BS0"/>
                     </connections>
