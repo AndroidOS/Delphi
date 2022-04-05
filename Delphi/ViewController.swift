@@ -22,8 +22,8 @@ class ViewController: UIViewController, FedResDataManagerDelegate,  UITableViewD
     var currencyString = ""
     var currencyAmount = ""
     
-    // Data model: These strings will be the data for the table view cells
-        let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+//    // Data model: These strings will be the data for the table view cells
+//        let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
     
     
     @IBOutlet weak var tableview: UITableView!

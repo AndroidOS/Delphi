@@ -17,6 +17,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var lblCurrency: UILabel!
     
+    @IBOutlet weak var btn_share: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        if let url = modelString {
@@ -53,4 +55,6 @@ class DetailViewController: UIViewController {
     }
     */
 
+    @IBAction func btnShareDetail(_ sender: Any) {
+    }
 }
