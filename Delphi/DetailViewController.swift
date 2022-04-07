@@ -58,7 +58,12 @@ class DetailViewController: UIViewController {
     @IBAction func btnShareDetail(_ sender: Any) {
         
         // text to share
-               let text = "This is some text that I want to share."
+                var text = ""
+        
+                if let url = modelString {
+                    text = url
+            
+                }
                
                // set up activity view controller
                let textToShare = [ text ]
