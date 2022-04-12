@@ -65,11 +65,18 @@
                                 <action selector="btnEmail:" destination="BYZ-38-t0r" id="ldS-44-KcC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="terminal.fill" catalog="system" id="2yb-EY-sLT">
-                            <connections>
-                                <action selector="btnDownload:" destination="BYZ-38-t0r" id="Eht-hz-ygW"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="terminal.fill" catalog="system" id="2yb-EY-sLT">
+                                <connections>
+                                    <action selector="btnDownload:" destination="BYZ-38-t0r" id="Eht-hz-ygW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="RXZ-1R-vjM">
+                                <connections>
+                                    <segue destination="oXx-oO-QpD" kind="showDetail" id="h5G-fp-S9u"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="Download" destination="2yb-EY-sLT" id="kbd-mE-0Kn"/>
@@ -82,6 +89,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="49.553571428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ias-uB-PIl">
+            <objects>
+                <viewController id="oXx-oO-QpD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCL-29-4uO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TJQ-5m-rBI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFK-0L-QfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="-480"/>
         </scene>
         <!--Details-->
         <scene sceneID="vEy-Mk-Ah4">
